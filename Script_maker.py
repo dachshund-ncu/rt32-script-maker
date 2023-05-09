@@ -18,9 +18,9 @@
 import sys
 import os
 import time
-
-sys.path.append('./libs/')
-sys.path.append('./ui/')
+DE_CAT = os.path.dirname(__file__)
+sys.path.append(os.path.join(DE_CAT, 'libs'))
+sys.path.append(os.path.join(DE_CAT, 'ui'))
 
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QMainWindow, QFileDialog, QMessageBox
 from PyQt5.QtGui     import QPalette, QColor
@@ -40,7 +40,7 @@ class Script_maker(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.system_list      = ["", "K band", "X band", "M band", "C band", "L band"]
         # Spectral part
-        self.molecules        = make_molecule_list("./libs/molecules")
+        self.molecules        = make_molecule_list(os.path.join(DE_CAT, 'libs', 'molecules'))
         self.molecule_list    = [str(x) for x in self.molecules]
         self.catalog          = []
         self.source_from_cat  = None
@@ -59,7 +59,7 @@ class Script_maker(QMainWindow, Ui_MainWindow):
         self.button_GenerateScripts.clicked.connect(        self.BTN_GenerateScripts  )
         self.actionAuthor.triggered.connect( self.Author )
         # CL part
-        proj_name, soft_name, band_name, self.catalog_continuum = src_reader("./catalogs/PozCalSRC_Cont.txt")
+        proj_name, soft_name, band_name, self.catalog_continuum = src_reader(os.path.join(DE_CAT, 'catalogs', 'PozCalSRC_Cont.txt'))
         self.catalog_continuum_list = [str(x) for x in self.catalog_continuum]
         self.comboBox_CL_ContSource.addItems(self.catalog_continuum_list)
         self.comboBox_CL_Receiver.addItems(self.system_list)
