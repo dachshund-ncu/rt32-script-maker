@@ -1,4 +1,6 @@
 # README #
+## This is fork. Original repository can be found [here](https://bitbucket.org/LordKhayyin/script_maker/src)
+
 
 Script_maker creates field system scripts for spectroscopy and calibration  for radio telescope RT32 in Torun Institute of Astronomy, Nicolaus Copernicus University.
 
@@ -16,23 +18,13 @@ Script_maker creates field system scripts for spectroscopy and calibration  for 
 ##### Suggested #####
 * pandas
 
-#### Installation with anaconda ####
-If You use anaconda, life is beautifull and simple. In tools there is explicit list with libraries in a working configuration.
-Go to script_maker directory and do one from below:
+#### Installation ####
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+```
 
-* To create new environment for this program:  
-conda create --name script_maker_env --file tools/anaconda.env
-
-* To install needed packages to existing environment: 
-conda install --name myenv --file tools/anaconda.env
-
-#### Running with anaconda ####
-* conda activate your_environment_name
-* python script_maker
-
-#### Usage ####
-* Find more on wiki: https://bitbucket.org/LordKhayyin/script_maker/wiki/Home
-
-### Who do I talk to? ###
-* Rafał Sarniak
-* kain at astro.umk.pl
+#### Running ####
+```bash
+python3 Script_maker.py
+```
