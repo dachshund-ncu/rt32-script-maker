@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>812</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Script Maker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Spectral scripts</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_catalog_path">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QComboBox" name="comboBox_Molecule"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Script name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QComboBox" name="comboBox_BW">
+            <property name="currentIndex">
+             <number>4</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>0.5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>16</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Number of scan pairs</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>RA (hms)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="lineEdit_DEC"/>
+          </item>
+          <item row="15" column="1">
+           <widget class="QSpinBox" name="spinBox_cal_scan_interv">
+            <property name="value">
+             <number>4</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_Sources">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Dec (dms)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Integration time of one scan (s)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Velocity (km/s)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Bandwidth (MHz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_script_name"/>
+          </item>
+          <item row="15" column="0">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Calibration (scan interval):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Molecule</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>One source from list</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_velocity">
+            <property name="minimum">
+             <double>-500.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>500.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QSpinBox" name="spinBox_numberofscanpairs"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_source_name"/>
+          </item>
+          <item row="14" column="1">
+           <widget class="QLineEdit" name="lineEdit_destination_directory"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_RA"/>
+          </item>
+          <item row="13" column="1">
+           <widget class="QSpinBox" name="spinBox_tintegration">
+            <property name="value">
+             <number>30</number>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Epoch</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Source name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QComboBox" name="comboBox_Epoch">
+            <item>
+             <property name="text">
+              <string>2000</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1950</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="button_LoadFile">
+            <property name="text">
+             <string>Load file with list of sources</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="0">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Destination directory</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>Receiver</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QComboBox" name="comboBox_Receiver"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_GenerateScripts">
+          <property name="text">
+           <string>Generate script(s)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Calibration scripts</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>Bandwidth (MHz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QComboBox" name="comboBox_CL_ContCal">
+            <property name="toolTip">
+             <string>Choose continuus calibration value.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>off</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>on,2,10</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Script name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Number of iterations</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QComboBox" name="comboBox_CL_bw">
+            <property name="toolTip">
+             <string>Bandwidth value.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="currentIndex">
+             <number>3</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>0.5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>16</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QComboBox" name="comboBox_CL_LO_SX">
+            <property name="toolTip">
+             <string>Set SX oscilator frequency value.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QSpinBox" name="spinBox_CL_BBC_End">
+            <property name="minimum">
+             <number>500</number>
+            </property>
+            <property name="maximum">
+             <number>1000</number>
+            </property>
+            <property name="value">
+             <number>990</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QComboBox" name="comboBox_CL_LO_SC">
+            <property name="toolTip">
+             <string>Set SC oscilator frequency value.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QComboBox" name="comboBox_CL_df">
+            <property name="toolTip">
+             <string>Offset between dbbc frequences between each onoff scans.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QSpinBox" name="spinBox_CL_NumIter">
+            <property name="value">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Local oscilator sc</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>Frequency offset (MHz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Local oscilator sx</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Cont cal</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QSpinBox" name="spinBox_CL_BBC_Start">
+            <property name="minimum">
+             <number>500</number>
+            </property>
+            <property name="maximum">
+             <number>1000</number>
+            </property>
+            <property name="value">
+             <number>510</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QComboBox" name="comboBox_CL_LO_SL">
+            <property name="toolTip">
+             <string>Set SL oscilator frequency value.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBox_CL_FieldSystem">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string>Set proper field system version - analog or digital.</string>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>fs</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>fs6</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QComboBox" name="comboBox_CL_DFBBC">
+            <property name="toolTip">
+             <string>Offset between bbc ferquences  during one onoff scan.</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>16</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>32</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>Receiver</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_CL_Receiver">
+            <property name="toolTip">
+             <string>Choose receiver.</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>BBC frequency start</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Local oscilator sl</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>BBC frequency offset (MHz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="QLineEdit" name="lineEdit_CL_ScriptName">
+            <property name="toolTip">
+             <string>Name of generated snp file. </string>
+            </property>
+            <property name="text">
+             <string>cl21</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>Field System</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>BBC frequency end</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Continuum source</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="QComboBox" name="comboBox_CL_ContSource">
+            <property name="toolTip">
+             <string>Choose calibrator.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit_CL_message">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_CL_message">
+          <property name="accessibleDescription">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Optional comment</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_GenerateClScript">
+          <property name="text">
+           <string>Generate calibration script</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>734</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_list_of_sources"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAuthor"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAuthor">
+   <property name="text">
+    <string>Author</string>
+   </property>
+  </action>
+  <action name="actionLoad_list_of_sources">
+   <property name="text">
+    <string>Load list of sources</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

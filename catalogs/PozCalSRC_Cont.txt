@@ -1,0 +1,15 @@
+Project: PozCalSrc
+Soft: FastScan
+System: Continuum
+
+# Name               ra                  dec                   v_sys
+casa                 23h23m24.0s         +58d48m54.0s          0
+3c218                09h18m05.651s       -12d05m43.99s         16001
+3c295                14h11m20.467s       +52d12m09.52s         108631
+3c147                05h42m36.13789843s  +49d51m07.2337251s    122768
+cygnusa              19h59m28.356s       +40d44m02.097s        16360
+dr21                 20h39m01.6s         +42d19m38.0s          0
+virgoa               12h30m49.42338230s  +12d23m28.0438581s    1256
+3c123                04h37m04.37510272s  +29d40m13.8184969s    58367
+taurusa              05h34m31.94s        +22d00m52.2s          0
+3c348                16h51m08.024s       +04d59m34.91s         42878
