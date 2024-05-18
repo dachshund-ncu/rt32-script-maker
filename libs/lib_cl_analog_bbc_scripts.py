@@ -119,10 +119,10 @@ class cl_AnalogScript:
     
     def pojedynczy_pomiar(self, shift = 0):
         self.plik.write('"\n')
+        self.plik.write("bbc01=%.2f,a,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
         self.plik.write("bbc02=%.2f,c,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
         self.plik.write("bbc03=%.2f,a,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
-        self.plik.write("bbc06=%.2f,a,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
-        self.plik.write("bbc08=%.2f,c,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
+        self.plik.write("bbc04=%.2f,c,%.1f,1\n" % ( self.start + self.dfbbc + shift, self.bw ) )
         self.plik.write("antenna=setss,%.1f\n"  % ( self.start + self.dfbbc + shift) )
         #plik.write('calrx=trm.rxg,fixed,11460.0\n')
         self.plik.write('onoff\n')
